@@ -10,6 +10,7 @@ from src.app.tools.serach_tool import get_tools, create_tool_node
 class GraphBuilder:
 
     def __init__(self, model):
+        self.basic_chatbot_node = None
         self.llm = model
         self.graph_builder = StateGraph(State)
 
